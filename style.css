@@ -1,0 +1,429 @@
+body
+{
+	margin: 0;
+	font-family: Arial, "Arial Black", "Comic Sans MS", 
+	"Courier New", Georgia, Impact, "Times New Roman", "Trebuchet MS", Verdana, sans-serif;
+}	
+
+.corp, header
+{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+}
+
+h1
+{
+	text-align: left;
+	font-size: 3rem;
+	margin:4rem 0rem 0rem 0rem;
+
+}
+
+.prénom
+{
+	color: #efd807;
+}
+
+h2
+{
+	font-size: 1.6rem;
+}
+
+h3
+{
+	background-color: #303030;
+	color: #efd807;
+	text-align: center;
+	font-size: 1.6rem;
+	padding-top: 0.5rem;
+	padding-bottom: 0.4rem;
+}
+
+.gauche
+{
+	background-color: #efd807;
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+}
+
+.texte_gauche1
+{
+	flex:1;
+	text-align: left;
+	margin: 0 1rem 0 1rem;
+}
+
+.texte_gauche2
+{
+	flex:2;
+	text-align: justify;
+	margin:0rem 1rem 0rem 1rem;
+
+}
+
+.texte_gauche3
+{
+	flex:1;
+	text-align: center;
+}
+
+.image
+{
+	text-align: center;
+}
+
+.image img
+{
+	width: 60%;
+	border-radius: 50%;
+	border:0.3rem solid #e0ca00;
+}
+
+.texte_gauche3 img
+{
+	width: 15%;
+	border-radius: 50%;
+	border:0.1rem solid black;
+}
+
+.droite
+{
+	width: 65%;
+}
+
+.soustitre
+{
+	text-align: left;
+	font-size: 1.7rem;
+}
+
+.sousligne
+{
+	text-align:center;
+	text-decoration: none;
+	padding: 0 0 0.1rem 0;
+	border-bottom: 0.15rem solid #efd807
+}
+
+p, ul
+{
+	font-size: 1.3rem;
+}
+
+.étude, .travail, .recommandation
+{
+	display:flex;
+	text-decoration: none;
+	padding: 0 0 0.1rem 0;
+	border-bottom: 0.15rem solid #efd807;
+	margin-right: 3%; 
+}
+
+.formation, .main
+{
+	width: 5rem;
+	height: 4.7rem;
+	border-radius: 50%;
+}
+
+.crayon
+{
+	width: 4.7rem;
+	height: 4rem;
+	border-radius: 50%;
+}
+
+.diplome
+{
+	display:flex;
+	text-align: justify;
+}
+
+.left
+{
+	width: 20%;
+	float: left;
+}
+.right p
+{
+	margin:0;
+	padding: 0;
+}
+.right
+{
+	text-align: justify;
+	box-sizing: border-box;
+	padding-left: 1rem;
+	padding-right: 2rem;
+	width: 80%;
+	float: left;
+}
+.right strong
+{
+	text-align: left;
+}
+
+.cible
+{
+	list-style-image: url(photo/dot-circle-regular.png);
+}
+
+.point
+{
+	list-style-image: url(photo/circle.png);
+}
+
+.diplome, .experience ul
+{
+	padding-top: 1.1rem;
+}
+
+.diplome li
+{
+	font-size: 1rem;
+	clear: both;
+}
+
+.diplome p
+{
+	padding-left: 4rem;
+	padding-bottom: 2rem;
+}
+
+.diplome .right p strong
+{
+	box-sizing: border-box;
+	padding-bottom: 0.7rem;
+	float: left;
+	width: 100%;
+}
+
+.diplome .right p .strong2
+{
+	font-weight: normal;	
+}
+
+.diplome .right .small
+{
+	font-size: 1.1rem;
+}
+
+.experience li
+{
+	font-size: 1rem;
+	clear: both;
+}
+
+.experience p
+{
+	padding-left: 4rem;
+	padding-bottom: 2rem;
+}
+
+.experience .right p strong
+{
+	box-sizing: border-box;
+	padding-bottom: 0.7rem;
+	float: left;
+	width: 100%;
+}
+
+.experience .right p .strong2
+{
+	font-weight: normal;	
+}
+
+.experience .right .small
+{
+	font-size: 1.1rem;
+}
+
+.recommandation
+{
+	clear: both;
+}
+
+.recommander
+{
+	display: flex;
+	text-align: justify;
+	padding-bottom: 3rem;
+	padding-top: 1rem;
+}
+
+.l1 
+{
+	text-align: left;
+	width: 50%;
+}
+
+.recommander .l1 p strong
+{
+	font-weight: normal;
+	float:left;
+	width: 100%;
+	padding-bottom: 0.5rem;
+}
+
+.recommander .d1 p strong
+{
+	font-weight: normal;
+	float:left;
+	width: 100%;
+	padding-bottom: 0.5rem;
+}
+
+.left
+{
+	text-transform: capitalize;
+}
+
+@media all and (max-device-width: 1024px)
+{
+	.texte_gauche3 img
+	{
+		width: 30%;
+	}
+}
+
+@media all and (max-device-width: 768px)
+{
+
+	.recommander .l1 p, .recommander .d1 p 
+	{
+		font-size: 1.15rem;
+	}
+
+	.texte_gauche1 p
+	{
+		font-size: 1.1rem;
+	}
+}
+
+@media all and (max-device-width: 480px)
+{
+	header .gauche
+	{
+		display:none;
+	}
+	
+	h1
+	{
+		font-size: 2rem;
+		margin-top: 1rem;
+		text-align: center;
+	}
+
+	.soustitre
+	{
+		font-size: 1.5rem;
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+
+	.corp
+	{
+		flex-direction: column-reverse;
+		display:flex;
+	}
+
+	h2
+	{
+		font-size: 1.4rem;
+	}
+
+	.étude
+	{
+		margin-left: 5%;
+		padding-left: 11%;
+	}
+
+	.étude .formation
+	{
+		width: 25%;
+		height: 25%;
+	}
+
+	.travail
+	{
+		margin-left: 5%;
+	}
+
+	.travail .main
+	{
+		width: 25%;
+		height: 20%;
+	}
+
+	.recommandation
+	{
+		margin-left: 5%;
+	}
+
+	.recommandation .crayon
+	{
+		width: 20%;
+		height: 20%;
+	}
+
+	p ul
+	{
+		font-size: 0.7rem;
+	}
+
+	.droite
+	{
+		width: 100%;
+	}
+
+	.recommander
+	{
+		padding-bottom: 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.recommander .l1
+	{
+		width: 100%;
+	}
+
+	.recommander .l1 p
+	{
+		padding-left: 15%;
+		width: 100%
+		font-size: 1rem;
+	}
+
+	.recommander .d1
+	{
+		padding-left: 15%;
+		width: 100%
+		font-size: 1rem;
+		padding-bottom: 0;
+	}
+
+	.gauche
+	{
+		width: 100%;
+	}
+
+	.LOISIRS
+	{
+		display:none;
+	}
+
+	.left, .right
+	{
+		float: none;
+		width: 100%;	
+	}
+
+	.right p
+	{
+		padding-left: 0;
+		padding-top: 1rem;
+	}
+}
