@@ -281,7 +281,7 @@ p, ul
 	text-transform: capitalize;
 }
 
-@media all and (max-device-width: 1024px)
+@media all and (max-width: 1024px)
 {
 	.texte_gauche3 img
 	{
@@ -289,7 +289,7 @@ p, ul
 	}
 }
 
-@media all and (max-device-width: 768px)
+@media all and (max-width: 768px)
 {
 
 	.recommander .l1 p, .recommander .d1 p 
@@ -303,7 +303,7 @@ p, ul
 	}
 }
 
-@media all and (max-device-width: 480px)
+@media all and (max-width: 480px)
 {
 	header .gauche
 	{
@@ -394,14 +394,14 @@ p, ul
 	.recommander .l1 p
 	{
 		padding-left: 15%;
-		width: 100%
+		width: 100%;
 		font-size: 1rem;
 	}
 
 	.recommander .d1
 	{
 		padding-left: 15%;
-		width: 100%
+		width: 100%;
 		font-size: 1rem;
 		padding-bottom: 0;
 	}
